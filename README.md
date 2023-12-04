@@ -17,6 +17,6 @@ This repository provides a suite of geostatistical tools, including functions to
 
 ### Citation
 If you use these codes, please cite:<br>
-Renmin Pretell. (2023). RPretellD/geostats: Initial release (0.1.0). Zenodo. https://zenodo.org/doi/10.5281/zenodo.10253690 <br>
+Renmin Pretell. (2023). RPretellD/geostats: Initial release (0.1.0). Zenodo. https://doi.org/10.5281/zenodo.10253691 <br>
 
 [![DOI](https://zenodo.org/badge/716446689.svg)](https://zenodo.org/doi/10.5281/zenodo.10253690)
