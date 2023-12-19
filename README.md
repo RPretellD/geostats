@@ -1,4 +1,4 @@
-# Geostats
+# geostats: A suite of geostatistical tools
 
 This repository provides a suite of geostatistical tools, including functions to compute the ground-motion correlation structure according to the relations by Bodenmann et al. (2023), and to do Kriging interpolation.
 
@@ -11,13 +11,13 @@ This repository provides a suite of geostatistical tools, including functions to
 
 
 ## Acknowledgements
-- Implementation of the Kriging code benefited from Scott Brandenberg's [random field](https://github.com/sjbrandenberg/ucla_geotech_tools/tree/main/random_field) python package.
+- Implementation of the Kriging code benefited from Scott Brandenberg's [random field](https://github.com/sjbrandenberg/ucla_geotech_tools/tree/main/src/ucla_geotech_tools) python package.
 - Some of the cython functions to compute ground-motion correlation are based on Lukas Bodenmann's [python functions](https://github.com/bodlukas/ground-motion-correlation-bayes).
 
 
 ## Citation
 If you use these codes, please cite:<br>
-Renmin Pretell. (2023). RPretellD/geostats: Initial release (0.1.0). Zenodo. https://doi.org/10.5281/zenodo.10253691 <br>
+Pretell, R. (2023). geostats: A suite of geostatistical tools (0.1.0). Zenodo. https://doi.org/10.5281/zenodo.10253691 <br>
 
 [![DOI](https://zenodo.org/badge/716446689.svg)](https://zenodo.org/doi/10.5281/zenodo.10253690)
 
