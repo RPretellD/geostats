@@ -12,8 +12,6 @@ This repository provides a suite of geostatistical tools, including functions to
 - [Example 3 (Cython backend)](https://github.com/RPretellD/geostats/blob/main/examples/Example3_Cython.ipynb): Ordinary Kriging using a user-defined correlation model. 
 - [Example 4 (Python backend)](https://github.com/RPretellD/geostats/blob/main/examples/Example4_Python.ipynb): Krige a map using a user-defined correlation model. 
 - [Example 4 (Cython backend)](https://github.com/RPretellD/geostats/blob/main/examples/Example4_Cython.ipynb): Krige a map using a user-defined correlation model. 
-- [Example 5 (Python backend)](https://github.com/RPretellD/geostats/blob/main/examples/Example5_Python.ipynb): Krige a map using a user-defined correlation model. 
-- [Example 5 (Cython backend)](https://github.com/RPretellD/geostats/blob/main/examples/Example5_Cython.ipynb): Krige a map using a user-defined correlation model. 
 
 
 ## Acknowledgements
