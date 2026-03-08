@@ -42,7 +42,7 @@ class OptionalBuildExt(build_ext):
 # Call setup
 setup(
     name="geostats",
-    version="1.0.0",
+    version="1.0.1",
     license='MIT',
     
     description="A suite of geostatistical tools.",
@@ -71,5 +71,5 @@ setup(
         "Programming Language :: Cython",
         "Programming Language :: Python :: 3",
 		"License :: OSI Approved :: MIT License",
-	],    
+	],
 )
