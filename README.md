@@ -20,8 +20,7 @@ This repository provides a suite of geostatistical tools, including functions to
 
 
 ## Citation
-If you use these codes, please cite:<br>
-Pretell, R. (2026). geostats: A suite of geostatistical tools (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.10253690 <br>
+> Pretell, R. (2026). geostats: A suite of geostatistical tools (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.10253690 <br>
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10253690.svg)](https://doi.org/10.5281/zenodo.10253690)
 
