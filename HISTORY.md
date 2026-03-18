@@ -1,4 +1,4 @@
-# geostats: Versions
+# geostats version history
 
 ### V0.1.0
 - Initial release. 
@@ -11,3 +11,6 @@
 
 ### V1.0.1
 - Added "noise" to covariance matrix to prevent singular matrix issues. 
+
+### V1.0.2
+- Modified the backend selection to facilitate going from Python (default) to Cython and back to Python. This modification also allows for the backend to be selected from [gmKriger](https://github.com/RPretellD/gmKriger).

@@ -5,11 +5,13 @@
 
 __author__ = 'A. Renmin Pretell Ductram'
 
-def select_backend(use_cython=False):
+def select_backend(backend):
 
     global _impl, __implementation__
-
-    if use_cython:
+    
+    backend = backend.strip().lower()
+    
+    if backend == 'cython':
         try:
             import geostats.build_Mrho_cy as build_Mrho
             _impl = build_Mrho
@@ -17,13 +19,21 @@ def select_backend(use_cython=False):
             return
         except ImportError:
             print('Cython implementation failed to load. Defaulting to Python.')
-            pass
+            backend = 'python'
 
-    import geostats.build_Mrho_py as build_Mrho
-    _impl = build_Mrho
-    __implementation__ = 'Python'
+    if backend == 'python':
+        import geostats.build_Mrho_py as build_Mrho
+        _impl = build_Mrho
+        __implementation__ = 'Python'
+        return
+        
+    raise ValueError('backend must be "python" or "cython"')
 
-select_backend(use_cython=False)
+
+select_backend(backend="Python")
+
+def get_backend():
+    return __implementation__
 
 def MrhoE_sam2sam(*args, **kwargs):
     return _impl.MrhoE_sam2sam(*args, **kwargs)

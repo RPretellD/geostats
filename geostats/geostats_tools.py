@@ -5,11 +5,13 @@
 
 __author__ = 'A. Renmin Pretell Ductram'
 
-def select_backend(use_cython=False):
+def select_backend(backend):
 
     global _impl, __implementation__
-
-    if use_cython:
+    
+    backend = backend.strip().lower()
+    
+    if backend == 'cython':
         try:
             import geostats.geostats_tools_cy as geostats_tools
             _impl = geostats_tools
@@ -17,13 +19,21 @@ def select_backend(use_cython=False):
             return
         except ImportError:
             print('Cython implementation failed to load. Defaulting to Python.')
-            pass
+            backend = 'python'
 
-    import geostats.geostats_tools_py as geostats_tools
-    _impl = geostats_tools
-    __implementation__ = 'Python'
+    if backend == 'python':
+        import geostats.geostats_tools_py as geostats_tools
+        _impl = geostats_tools
+        __implementation__ = 'Python'
+        return
+        
+    raise ValueError('backend must be "python" or "cython"')
 
-select_backend(use_cython=False)
+
+select_backend(backend="Python")
+
+def get_backend():
+    return __implementation__
 
 def get_E_epi_dist(*args, **kwargs):
     return _impl.get_E_epi_dist(*args, **kwargs)

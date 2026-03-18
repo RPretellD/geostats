@@ -42,7 +42,7 @@ class OptionalBuildExt(build_ext):
 # Call setup
 setup(
     name="geostats",
-    version="1.0.1",
+    version="1.0.2",
     license='MIT',
     
     description="A suite of geostatistical tools.",
@@ -58,7 +58,7 @@ setup(
 	include_package_data=True,
     ext_modules=cythonize(extensions),
     cmdclass={"build_ext": OptionalBuildExt},
-    python_requires	= ">=3.7",
+    python_requires	= ">=3.9",
     install_requires=[
             "numpy",
             "Cython",

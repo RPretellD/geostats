@@ -1,3 +1,26 @@
+Metadata-Version: 2.4
+Name: geostats
+Version: 1.0.2
+Summary: A suite of geostatistical tools.
+Home-page: https://github.com/RPretellD/geostats
+Author: A. Renmin Pretell Ductram
+Author-email: rpretell@unr.edu
+License-Expression: MIT
+Keywords: geostats
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: Cython
+Requires-Dist: vincenty
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
 # geostats: A suite of geostatistical tools
 
 This repository provides a suite of geostatistical tools, including functions to compute the ground-motion correlation structure according to the relations by Bodenmann et al. (2023), and to do Kriging interpolation.
